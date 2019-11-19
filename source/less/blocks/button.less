@@ -1,4 +1,9 @@
 .button {
+  display: block;
+  width: 280px;
+  padding-top: 14px;
+  padding-bottom: 11px;
+
   font-family: @font-title;
   text-align: center;
   text-transform: uppercase;
@@ -6,4 +11,12 @@
   color: @color-white;
 
   background-color: @main-color;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    width: 245px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
 }
