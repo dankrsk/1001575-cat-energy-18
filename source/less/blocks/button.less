@@ -1,9 +1,21 @@
 .button {
+  display: inline-block;
+  width: 100%;
+  padding-top: 14px;
+  padding-right: 20px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+
   font-family: @font-title;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: @color-white;
 
-  background-color: @main-color;
+  background-color: @color-main-bg;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
 }

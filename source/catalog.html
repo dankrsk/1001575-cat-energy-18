@@ -3,34 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог продукции - Cat Energy: магазин функционального питания для котов</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo">
-        <img class="logo__image" src="https://via.placeholder.com/191x39" width="191" height="39" alt="Cat Energy: магазин функционального питания для котов">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          Открыть меню
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a>Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo">
+          <img class="logo__image" src="https://via.placeholder.com/191x39" width="191" height="39" alt="Cat Energy: магазин функционального питания для котов">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            Открыть меню
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a>Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title section-title">Каталог продукции</h1>
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title section-title">Каталог продукции</h1>
+      </div>
       <section class="catalog">
         <ul class="catalog__list">
           <li class="catalog__item">
@@ -59,8 +64,8 @@
                   <img class="catalog__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Pro 500 г со вкусом курицы">
                 </a>
               </p>
+              <a class="catalog__to-buy button" href="#">Заказать</a>
             </div>
-            <a class="catalog__to-buy button" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -88,8 +93,8 @@
                   <img class="catalog__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Pro 1000 г со вкусом курицы">
                 </a>
               </p>
+              <a class="catalog__to-buy button" href="#">Заказать</a>
             </div>
-            <a class="catalog__to-buy button" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -117,8 +122,8 @@
                   <img class="catalog__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Pro 500 г со вкусом рыбы">
                 </a>
               </p>
+              <a class="catalog__to-buy button" href="#">Заказать</a>
             </div>
-            <a class="catalog__to-buy button" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -146,8 +151,8 @@
                   <img class="catalog__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Pro 1000 г со вкусом рыбы">
                 </a>
               </p>
+              <a class="catalog__to-buy button" href="#">Заказать</a>
             </div>
-            <a class="catalog__to-buy button" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -175,8 +180,8 @@
                   <img class="catalog__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Slim 500 г со вкусом гречки">
                 </a>
               </p>
+              <a class="catalog__to-buy button" href="#">Заказать</a>
             </div>
-            <a class="catalog__to-buy button" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -204,8 +209,8 @@
                   <img class="catalog__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Slim 1000 г со вкусом гречки">
                 </a>
               </p>
+              <a class="catalog__to-buy button" href="#">Заказать</a>
             </div>
-            <a class="catalog__to-buy button" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__wrapper">
@@ -233,53 +238,60 @@
                   <img class="catalog__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Slim 500 г со вкусом гречки">
                 </a>
               </p>
+              <a class="catalog__to-buy button" href="#">Заказать</a>
             </div>
-            <a class="catalog__to-buy button" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item catalog__item--more-block">
+            <div class="catalog__wrapper">
+              <p class="catalog__more-text">
+                <b class="catalog__more-bold">
+                  Показать еще 100500 товаров
+                </b>
+              </p>
+              <p class="catalog__text">
+                На самом деле вкусов гораздо больше!
+              </p>
+              <a class="catalog__more-button button" href="#">Показать все</a>
+            </div>
           </li>
         </ul>
-        <div class="catalog__more-block">
-          <p class="catalog__more-text">
-            <b class="catalog__more-bold">
-              Показать еще 100500 товаров
-            </b>
-          </p>
-          <p class="catalog__text">
-            На самом деле вкусов гораздо больше!
-          </p>
-          <a class="catalog__more-button button" href="#">Показать все</a>
-        </div>
+
       </section>
     </main>
     <footer class="page-footer">
-      <p class="page-footer__logo footer-logo">
-        <a class="footer-logo__link">
-          <img class="footer-logo__image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Cat Energy: магазин функционального питания для котов">
-        </a>
-      </p>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="">
-              <span class="visually-hidden">Мы во Вконтакте</span>
+      <div class="page-footer__label-block mini-footer">
+        <div class="mini-footer__wrapper">
+          <p class="mini-footer__logo footer-logo">
+            <a class="footer-logo__link">
+              <img class="footer-logo__image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Cat Energy: магазин функционального питания для котов">
             </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="">
-              <span class="visually-hidden">Мы во Инстаграме</span>
+          </p>
+          <div class="mini-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <span class="visually-hidden">Мы во Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <span class="visually-hidden">Мы в Инстаграме</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <span class="visually-hidden">Мы на Facebook</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mini-footer__copyright">
+            <a class="mini-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="mini-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="mini-footer__copyright-image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Разработано в HTML Academy">
             </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="">
-              <span class="visually-hidden">Мы на Facebook</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-footer__copyright-image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Разработано в HTML Academy">
-        </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
