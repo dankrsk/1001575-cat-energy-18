@@ -23,6 +23,23 @@
     background-color: #5eaa2f;
   }
 
+  &--light {
+    color: @color-main;
+
+    background-color: @color-light-bg;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: fade(@color-main, 30%);
+
+      background-color: #ebebeb;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     padding: 15px 20px;
   }
