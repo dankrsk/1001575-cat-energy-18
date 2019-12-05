@@ -1,4 +1,22 @@
 .footer-logo {
+  margin: 0;
+
+  line-height: 0;
+}
+
+.footer-logo__link {
+  display: inline-block;
   width: 128px;
   height: 24px;
+}
+
+.footer-logo__link[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

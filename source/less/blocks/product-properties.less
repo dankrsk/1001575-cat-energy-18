@@ -3,11 +3,12 @@
 }
 
 .product-properties__item {
-  *:first-child {
-    text-align: left;
-  }
+  display: flex;
+  justify-content: space-between;
 
-  *:last-child {
-    text-align: right;
+  @media (min-width: @tablet-width) {
+    padding: 6px 0;
+
+    border-bottom: 1px solid #cecece;
   }
 }

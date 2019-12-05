@@ -1,11 +1,9 @@
 .button {
   display: inline-block;
-  width: 100%;
-  padding-top: 14px;
-  padding-right: 20px;
-  padding-bottom: 11px;
-  padding-left: 20px;
+  width: 280px;
+  padding: 11px 20px;
 
+  font-weight: @regular;
   font-family: @font-title;
   text-align: center;
   text-transform: uppercase;
@@ -14,8 +12,35 @@
 
   background-color: @color-main-bg;
 
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: fade(@color-white, 30%);
+
+    background-color: #5eaa2f;
+  }
+
+  &--light {
+    color: @color-main;
+
+    background-color: @color-light-bg;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: fade(@color-main, 30%);
+
+      background-color: #ebebeb;
+    }
+  }
+
   @media (min-width: @tablet-width) {
-    padding-top: 17px;
-    padding-bottom: 15px;
+    padding: 15px 20px;
   }
 }
