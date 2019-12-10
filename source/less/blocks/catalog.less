@@ -132,8 +132,6 @@
   order: -1;
   margin: 0;
 
-  line-height: 0;
-
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 126px;
@@ -144,6 +142,22 @@
 
 .catalog__image-link {
   display: inline-block;
+}
+
+.catalog__image {
+  width: 140px;
+  height: 144px;
+
+  vertical-align: bottom;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }
 
 .catalog__to-buy {
