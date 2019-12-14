@@ -22,7 +22,7 @@
 }
 
 .social__item {
-  line-height: 0;
+  display: flex;
 }
 
 .social__item + .social__item {
@@ -61,27 +61,33 @@
 
   &--vk {
     width: 22px;
+    height: 18px;
   }
 
   &--insta {
     width: 17px;
+    height: 17px;
   }
 
   &--fb {
     width: 10px;
+    height: 19px;
   }
 
   @media (min-width: @tablet-width) {
     &--vk {
       width: 30px;
+      height: 16px;
     }
 
     &--insta {
       width: 23px;
+      height: 23px;
     }
 
     &--fb {
       width: 14px;
+      height: 28px;
     }
   }
 }

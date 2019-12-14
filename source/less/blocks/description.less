@@ -5,6 +5,8 @@
   font-size: 14px;
   line-height: 18px;
 
+  counter-reset: description;
+
   @media (min-width: @tablet-width) {
     padding-bottom: 105px;
 
@@ -60,37 +62,51 @@
     height: 60px;
 
     background-color: @color-main-bg;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-size: 50px auto;
+    }
   }
 
   &--leaf {
     &::before {
       background-image: url("../img/advantage-leaf@1x.png");
-      background-position: center center;
-      background-repeat: no-repeat;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-leaf@2x.png");
+      }
     }
   }
 
   &--water {
     &::before {
       background-image: url("../img/advantage-powder@1x.png");
-      background-position: center center;
-      background-repeat: no-repeat;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-powder@2x.png");
+      }
     }
   }
 
   &--tableware {
     &::before {
       background-image: url("../img/advantage-dining@1x.png");
-      background-position: center center;
-      background-repeat: no-repeat;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-dining@2x.png");
+      }
     }
   }
 
   &--clock {
     &::before {
       background-image: url("../img/advantage-clock@1x.png");
-      background-position: center center;
-      background-repeat: no-repeat;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-clock@2x.png");
+      }
     }
   }
 
@@ -100,6 +116,8 @@
     margin-right: 81px;
     padding-left: 0;
     margin-bottom: 254px;
+
+    counter-increment: description;
 
     &:nth-last-child(2) {
       margin-bottom: 0;
@@ -113,6 +131,8 @@
     }
 
     &::after {
+      content: counter(description);
+
       position: absolute;
       z-index: -1;
       top: -154px;
@@ -123,30 +143,6 @@
       font-size: 281px;
       line-height: 281px;
       color: @color-light-bg;
-    }
-
-    &:nth-of-type(1) {
-      &::after {
-        content: "1";
-      }
-    }
-
-    &:nth-of-type(2) {
-      &::after {
-        content: "2";
-      }
-    }
-
-    &:nth-of-type(3) {
-      &::after {
-        content: "3";
-      }
-    }
-
-    &:nth-of-type(4) {
-      &::after {
-        content: "4";
-      }
     }
   }
 
