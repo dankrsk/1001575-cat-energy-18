@@ -66,32 +66,25 @@
   text-decoration: none;
   color: @color-main;
 
-  svg {
-    width: 41px;
-    height: 41px;
-    margin-top: -4px;
-
-    @media (min-width: @tablet-width) {
-      margin-left: 16px;
-    }
+  &:hover .mini-footer__copyright-logo,
+  &focus .mini-footer__copyright-logo{
+    fill: @color-main-bg;
   }
 
-  path {
-    fill: #666666;
-  }
+  &:active .mini-footer__copyright-logo {
+    fill: @color-main-bg;
 
-  &:hover,
-  &focus {
-    path {
-      fill: @color-main-bg;
-    }
-  }
-
-  &:active {
     opacity: 0.3;
+  }
+}
 
-    path {
-      fill: @color-main-bg;
-    }
+.mini-footer__copyright-logo {
+  width: 27px;
+  height: 34px;
+
+  fill: #666666;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 16px;
   }
 }
