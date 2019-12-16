@@ -38,26 +38,22 @@
 }
 
 .social__link {
-  display: inline-block;
+  display: flex;
 
-  path {
-    fill: #666666;
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: @color-main-bg;
   }
 
-  &:hover,
-  &:focus {
-    path {
-      fill: @color-main-bg;
-    }
-  }
-
-  &:active {
-    path {
-      fill: @color-main-bg;
-    }
+  &:active .social__icon {
+    fill: @color-main-bg;
 
     opacity: 0.3;
   }
+}
+
+.social__icon {
+  fill: #666666;
 
   &--vk {
     width: 22px;
