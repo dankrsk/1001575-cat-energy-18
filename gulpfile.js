@@ -83,7 +83,7 @@ gulp.task("server", function () {
 });
 
 gulp.task("refresh", function (done) {
-	var htmlCopy = gulp.src("source/*.html")
+  var htmlCopy = gulp.src("source/*.html")
   .pipe(gulp.dest("build"));
   server.reload();
   done();
