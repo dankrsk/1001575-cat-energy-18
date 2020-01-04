@@ -13,7 +13,6 @@ var webp = require("gulp-webp");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
-var pipeline = require("readable-stream").pipeline;
 var server = require("browser-sync").create();
 
 gulp.task("clean", function () {
@@ -53,17 +52,15 @@ gulp.task("css", function () {
 });
 
 gulp.task("js", function () {
-  return pipeline(
-    gulp.src("source/js/**/*.js", { base: "source" }),
-    uglify(),
-    gulp.dest("build")
-  );
+  return gulp.src("source/js/**/*.js", { base: "source" })
+    .pipe(uglify())
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("images", function () {
   return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/sprite.svg"])
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
+      //imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
