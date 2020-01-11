@@ -1,6 +1,5 @@
 .description {
-  padding-top: 32px;
-  padding-bottom: 47px;
+  padding: 15px 0 42px 0;
 
   font-size: 14px;
   line-height: 18px;
@@ -8,10 +7,12 @@
   counter-reset: description;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 105px;
+    padding: 48px 0 102px 0;
 
     font-size: 16px;
     line-height: 24px;
+
+    border-bottom: 1px solid @color-light-bg;
   }
 }
 
@@ -20,10 +21,10 @@
 }
 
 .description__title {
-  margin-bottom: 41px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 180px;
+    margin-bottom: 181px;
   }
 }
 
@@ -44,7 +45,7 @@
   align-items: center;
   width: 98%;
   min-height: 60px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   padding-left: 80px;
 
   &:last-child {
@@ -112,10 +113,10 @@
 
   @media (min-width: @tablet-width) {
     display: list-item;
-    width: 34.46%;
-    margin-right: 81px;
+    width: 34.6%;
+    margin-right: 80px;
     padding-left: 0;
-    margin-bottom: 254px;
+    margin-bottom: 245px;
 
     counter-increment: description;
 
@@ -124,10 +125,16 @@
     }
 
     &::before {
-      top: -117px;
+      top: -112px;
 
       width: 80px;
       height: 80px;
+    }
+
+    &:first-child {
+      &::after {
+        left: 42.6%;
+      }
     }
 
     &::after {
@@ -135,8 +142,8 @@
 
       position: absolute;
       z-index: -1;
-      top: -154px;
-      left: 48%;
+      top: -140px;
+      left: 46.4%;
 
       font-family: @font-title;
       font-weight: @regular;

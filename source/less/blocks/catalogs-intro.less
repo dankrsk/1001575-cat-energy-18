@@ -29,9 +29,9 @@
 
 .catalogs-intro__item {
   margin-bottom: 20px;
-  padding-top: 39px;
+  padding-top: 30px;
   padding-right: 7.14%;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
   padding-left: 7.14%;
 
   background-color: @color-light-bg;
@@ -42,15 +42,17 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
-    padding-top: 81px;
+    padding-top: 78px;
     padding-right: 8.76%;
-    padding-bottom: 62px;
-    padding-left: 7.34%;
+    padding-bottom: 56px;
+    padding-left: 7.3%;
   }
 
   @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
     width: 570px;
-    padding: 81px 0 62px 52px;
+    padding: 78px 0 62px 52px;
 
     &:last-child {
       margin-bottom: 30px;
@@ -61,7 +63,7 @@
 .catalogs-intro__title {
   position: relative;
 
-  margin: 0 0 36px 0;
+  margin: 0 0 29px 0;
   padding-left: 72px;
 
   font-family: @font-title;
@@ -76,7 +78,7 @@
 
     position: absolute;
     top: -6px;
-    left: 0;
+    left: 2px;
 
     width: 50px;
     height: 50px;
@@ -91,7 +93,7 @@
 
       position: absolute;
       top: -8px;
-      left: 6px;
+      left: 10px;
 
       width: 35px;
       height: 50px;
@@ -107,8 +109,8 @@
       content: "";
 
       position: absolute;
-      top: 6px;
-      left: -9px;
+      top: 5px;
+      left: -7px;
 
       width: 67px;
       height: 28px;
@@ -120,13 +122,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 26px 0;
+    margin: 0 0 23px 0;
     padding: 0;
 
     font-size: 36px;
 
     &::before {
-      top: 11px;
+      top: 14px;
       right: 0;
       left: auto;
 
@@ -136,7 +138,7 @@
 
     &--cat {
       &::after {
-        top: 0;
+        top: 2px;
         right: 30px;
         left: auto;
 
@@ -147,8 +149,8 @@
 
     &--panther {
       &::after {
-        top: 55px;
-        right: -32px;
+        top: 56px;
+        right: -34px;
         left: auto;
 
         width: 268px;
@@ -158,11 +160,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 75px;
-    padding-left: 216px;
+    margin-bottom: 72px;
+    padding-left: 162px;
 
     &::before {
-      top: -32px;
+      top: -31px;
       right: auto;
       left: 0;
 
@@ -172,7 +174,7 @@
 
     &--cat {
       &::after {
-        top: -40px;
+        top: -37px;
         right: auto;
         left: 13px;
 
@@ -183,7 +185,7 @@
 
     &--panther {
       &::after {
-        top: -12px;
+        top: -10px;
         right: auto;
         left: -18px;
 
@@ -195,16 +197,25 @@
 }
 
 .catalogs-intro__description {
-  width: 87%;
-  margin-bottom: 23px;
+  width: 94%;
+  margin: 0 0 22px 0;
 
   @media (min-width: @tablet-width) {
-    width: 55%;
-    margin-bottom: 61px;
+    width: 63%;
+    margin-bottom: 57px;
+
+    &--pro {
+      padding-right: 5.5%;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 462px;
+    margin-bottom: 31px;
+
+    &--pro {
+      padding-right: 0;
+    }
   }
 }
 
@@ -220,7 +231,7 @@
 
 .catalogs-intro__to-catalog {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 19px;
 
   font-family: @font-title;
   font-weight: @regular;
@@ -238,7 +249,7 @@
     width: 25px;
     height: 12px;
     margin-top: 3px;
-    margin-left: 12px;
+    margin-left: 11px;
 
     background-image: url("../img/icon-right-arrow-long.svg");
     background-position: center center;
@@ -275,7 +286,11 @@
       width: 24px;
       height: 11px;
       margin-top: 5px;
-      margin-left: 25px;
+      margin-left: 24px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: auto;
   }
 }
