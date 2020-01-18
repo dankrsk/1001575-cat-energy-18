@@ -29,7 +29,7 @@
 }
 
 .catalog__item {
-  padding: 25px 0;
+  padding-bottom: 24px;
 
   border-bottom: 1px solid #ededed;
 
@@ -44,7 +44,7 @@
     margin-bottom: 140px;
     padding-top: 165px;
     padding-right: 5.23%;
-    padding-bottom: 40px;
+    padding-bottom: 39px;
     padding-left: 5.23%;
     border-bottom-color: transparent;
 
@@ -96,8 +96,8 @@
 }
 
 .catalog__title {
-  width: 72px;
-  margin: 0 0 18px 0;
+  width: 80px;
+  margin: 23px 0 11px 0;
 
   font-family: @font-title;
   font-weight: @regular;
@@ -112,20 +112,16 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 50.1%;
-    margin: 0 auto 22px auto;
+    width: 55%;
+    margin: 0 auto 19px auto;
 
     font-size: 20px;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
-    width: 126px;
+    width: 135px;
   }
-}
-
-.catalog__properties {
-  margin-bottom: 33px;
 }
 
 .catalog__picture {
@@ -162,15 +158,10 @@
 
 .catalog__to-buy {
   width: 100%;
-  padding-top: 13px;
-  padding-bottom: 12px;
-
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .catalog__item--more-block {
-  padding-top: 83px;
+  padding-top: 80px;
   padding-bottom: 25px;
 
   text-align: center;
@@ -189,13 +180,13 @@
   position: relative;
 
   width: 100%;
-  margin: 0 0 11px 0;
+  margin: 0 0 7px 0;
 
   ::before {
     content: "";
 
     position: absolute;
-    top: -25px;
+    top: -24px;
     left: 50%;
     transform: translate(-50%, -100%);
 
@@ -210,10 +201,10 @@
 
   @media (min-width: @tablet-width) {
     width: 54%;
-    margin: 0 auto 28px auto;
+    margin: 0 auto 20px auto;
 
     ::before {
-      top: -50px;
+      top: -52px;
 
       width: 60px;
       height: 60px;
@@ -237,6 +228,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    line-height: 16px;
   }
 }
 
@@ -257,13 +249,17 @@
 .catalog__more-button {
   width: 100%;
 
-  line-height: 20px;
-
   @media (min-width: @tablet-width) {
     position: absolute;
     bottom: 40px;
     left: 11.42%;
 
     width: 76.85%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 37px;
+
+    width: 170px;
   }
 }
