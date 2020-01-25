@@ -14,5 +14,3 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
-/* Поправить: */
-/* https://github.com/htmlacademy-adaptive/1001575-cat-energy-18/pull/9#pullrequestreview-327364028 */
