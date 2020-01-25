@@ -60,7 +60,7 @@ gulp.task("js", function () {
 gulp.task("images", function () {
   return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/sprite.svg"])
     .pipe(imagemin([
-      //imagemin.optipng({optimizationLevel: 3}),
+      imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
