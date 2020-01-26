@@ -45,6 +45,10 @@
 .social__link {
   display: flex;
 
+  & * {
+    pointer-events: none;
+  }
+
   &:hover .social__icon,
   &:focus .social__icon {
     color: @color-main-bg;
